@@ -13,7 +13,11 @@ export default function Register() {
   const submit = async (e) => {
     e.preventDefault();
 
+<<<<<<< HEAD
     // ✅ basic validation
+=======
+    
+>>>>>>> 37eeedd0c44772c9447a6a7362a269b95847ba82
     if (!email || !password) {
       alert("Please fill all fields");
       return;
@@ -22,7 +26,11 @@ export default function Register() {
     setLoading(true);
 
     try {
+<<<<<<< HEAD
       // ✅ check if email already exists
+=======
+      
+>>>>>>> 37eeedd0c44772c9447a6a7362a269b95847ba82
       const snapshot = await getDocs(collection(db, "users"));
       const users = snapshot.docs.map(doc => doc.data());
 
@@ -36,13 +44,21 @@ export default function Register() {
         return;
       }
 
+<<<<<<< HEAD
       // ✅ add user
+=======
+      
+>>>>>>> 37eeedd0c44772c9447a6a7362a269b95847ba82
       await addDoc(collection(db, "users"), {
         email,
         password
       });
 
+<<<<<<< HEAD
       alert("Registration successful ✅");
+=======
+      alert("Registration successful ");
+>>>>>>> 37eeedd0c44772c9447a6a7362a269b95847ba82
       nav("/login");
 
     } catch (err) {

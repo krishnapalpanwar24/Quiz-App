@@ -23,7 +23,11 @@ export default function Dashboard() {
           </button>
         </div>
 
+<<<<<<< HEAD
         {/* LOAD ADD QUIZ / ALL QUIZ */}
+=======
+        
+>>>>>>> 37eeedd0c44772c9447a6a7362a269b95847ba82
         <Outlet />
       </div>
     </div>

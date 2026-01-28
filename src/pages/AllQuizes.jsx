@@ -7,7 +7,11 @@ export default function AllQuizes() {
   const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState("ALL");
 
+<<<<<<< HEAD
   // 🔹 Fetch quizzes from Firebase
+=======
+
+>>>>>>> 37eeedd0c44772c9447a6a7362a269b95847ba82
   useEffect(() => {
     const fetchQuizzes = async () => {
       try {
@@ -27,13 +31,21 @@ export default function AllQuizes() {
     fetchQuizzes();
   }, []);
 
+<<<<<<< HEAD
   // 🔹 Get unique categories for dropdown
+=======
+  
+>>>>>>> 37eeedd0c44772c9447a6a7362a269b95847ba82
   const categories = [
     "ALL",
     ...new Set(quizzes.map((q) => q.category)),
   ];
 
+<<<<<<< HEAD
   // 🔹 Filter quizzes by category
+=======
+  
+>>>>>>> 37eeedd0c44772c9447a6a7362a269b95847ba82
   const filteredQuizzes =
     selectedCategory === "ALL"
       ? quizzes
@@ -45,7 +57,11 @@ export default function AllQuizes() {
     <div className="container mt-4">
       <h3 className="mb-4 text-center">All Quizzes</h3>
 
+<<<<<<< HEAD
       {/* 🔽 CATEGORY DROPDOWN */}
+=======
+      
+>>>>>>> 37eeedd0c44772c9447a6a7362a269b95847ba82
       <div className="mb-4 text-center">
         <select
           className="form-select w-50 mx-auto"
@@ -60,14 +76,21 @@ export default function AllQuizes() {
         </select>
       </div>
 
+<<<<<<< HEAD
       {/* ❌ NO QUIZZES */}
+=======
+      
+>>>>>>> 37eeedd0c44772c9447a6a7362a269b95847ba82
       {filteredQuizzes.length === 0 && (
         <p className="text-muted text-center">
           No quizzes available for this category
         </p>
       )}
 
+<<<<<<< HEAD
       {/* ✅ QUIZ LIST */}
+=======
+>>>>>>> 37eeedd0c44772c9447a6a7362a269b95847ba82
       {filteredQuizzes.map((q, index) => (
         <div key={q.id} className="card mb-3 shadow-sm">
           <div className="card-body">

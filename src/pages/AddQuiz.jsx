@@ -25,7 +25,11 @@ export default function AddQuiz() {
         createdAt: new Date()
       });
 
+<<<<<<< HEAD
       alert("Quiz Added Successfully ✅");
+=======
+      alert("Quiz Added Successfully ");
+>>>>>>> 37eeedd0c44772c9447a6a7362a269b95847ba82
 
       setCategory("");
       setQuestion("");

@@ -11,7 +11,11 @@ export default function AdminLogin() {
 
     if (email === "admin@gmail.com" && password === "admin123") {
       localStorage.setItem("adminAuth", "true");
+<<<<<<< HEAD
       navigate("/dashboard"); // ✅ GO TO DASHBOARD
+=======
+      navigate("/dashboard"); 
+>>>>>>> 37eeedd0c44772c9447a6a7362a269b95847ba82
     } else {
       alert("Invalid Admin Credentials");
     }
